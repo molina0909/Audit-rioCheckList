@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Checklist Pré-Evento - Auditório Citibank</title>
+  <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+</head>
+<body>
+  <div class="container">
+    <header>
+      <h1>Checklist Pré-Evento</h1>
+      <p>Auditório do Citibank - Evento Corporativo</p>
+    </header>
+
+    <form action="/enviar_checklist" method="POST">
+      
+      <section class="checklist">
+        <h2>1. Utilização do Ambiente</h2>
+        <ul>
+          <li>
+            <label>
+              <input type="checkbox" name="espaco_disponivel"> O espaço está disponível?
+            </label>
+          </li>
+        </ul>
+      </section>
+      
+      <section class="checklist">
+        <h2>2. Equipamentos Técnicos e Audiovisuais</h2>
+        <ul>
+          <li><input type="checkbox" name="data_horario_confirmados"> Data e hora confirmados</li>
+          <li><input type="checkbox" name="qtd_participantes"> Quantidade de participantes</li>
+          <li><input type="checkbox" name="speaker_line"> Speaker Line Renkus-Heinz IC16-8-RD</li>
+          <li><input type="checkbox" name="speaker_teto"> Speaker Teto JBL Pro CONTROL 16CT</li>
+          <li><input type="checkbox" name="microfone_shure"> Microfones Shure SM58</li>
+          <li><input type="checkbox" name="microfone_lapela"> Microfones Lapela Shure</li>
+          <li><input type="checkbox" name="microfone_gooseneck"> Microfone Gooseneck (Púlpito)</li>
+          <li><input type="checkbox" name="interface_cameras"> Interface Câmeras Panasonic AW-RP60GJ</li>
+          <li><input type="checkbox" name="interface_blackmagic"> Interface Blackmagic Design ATEM TV Studio Pro</li>
+          <li><input type="checkbox" name="mixer_yamaha"> Mixer Yamaha QL-1</li>
+          <li><input type="checkbox" name="automacoes_amx"> Automação Via AMX</li>
+          <li><input type="checkbox" name="rack_temperatura"> Rack - Verificação de temperatura e ligações</li>
+          <li><input type="checkbox" name="monitor_edifier"> Monitores Edifier R1280DB</li>
+          <li><input type="checkbox" name="codec_cisco"> Codec Cisco SX80</li>
+        </ul>
+      </section>
+      
+      <section class="checklist">
+        <h2>3. Projetores e Telas</h2>
+        <ul>
+          <li><input type="checkbox" name="projetor_barco"> Projetor Barco UDX-4K32</li>
+          <li><input type="checkbox" name="telas_projecao"> Telas de Projeção Stewart Filmscreen 198"</li>
+        </ul>
+      </section>
+      
+      <section class="checklist">
+        <h2>4. Painéis e Controles</h2>
+        <ul>
+          <li><input type="checkbox" name="touchpanel_usuario"> Touch Panel AMX MT-1002 (Usuário)</li>
+          <li><input type="checkbox" name="touchpanel_operador"> Touch Panel AMX MT-1002 (Operador)</li>
+        </ul>
+      </section>
+      
+      <section class="checklist">
+        <h2>5. Câmeras e Telas</h2>
+        <ul>
+          <li><input type="checkbox" name="cameras_panasonic"> Câmeras Panasonic AW-UE150 4K</li>
+          <li><input type="checkbox" name="cart_tv_samsung"> Cart TV Samsung QB55R</li>
+        </ul>
+      </section>
+      
+      <section class="checklist">
+        <h2>6. Conectividade</h2>
+        <ul>
+          <li><input type="checkbox" name="floorbox_conectores"> Floorbox - Verificação de conectores (ethernet, HDMI, tomadas, cabos, etc.)</li>
+        </ul>
+      </section>
+
+      <!-- Botão de Enviar -->
+      <button type="submit" class="btn-submit">Enviar Checklist</button>
+    </form>
+  </div>
+
+  <footer>
+    <p>&copy; 2025 Auditório Citibank | Todos os direitos reservados</p>
+  </footer>
+</body>
+</html>

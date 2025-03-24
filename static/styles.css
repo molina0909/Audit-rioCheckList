@@ -1,0 +1,82 @@
+/* Reset básico para eliminar margens/paddings padrões */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  /* Configurações de fontes e cores */
+  body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
+    line-height: 1.6;
+  }
+  
+  .container {
+    width: 80%;
+    margin: 20px auto;
+  }
+  
+  header {
+    text-align: center;
+    margin-bottom: 30px;
+  }
+  
+  header h1 {
+    color: #005b96;
+  }
+  
+  header p {
+    font-size: 1.2em;
+    color: #777;
+  }
+  
+  h2 {
+    font-size: 1.4em;
+    color: #005b96;
+    margin-top: 20px;
+    margin-bottom: 10px;
+  }
+  
+  ul {
+    list-style: none;
+    margin-left: 20px;
+  }
+  
+  li {
+    margin-bottom: 10px;
+  }
+  
+  input[type="checkbox"] {
+    margin-right: 10px;
+  }
+  
+  /* Botão de envio estilizado */
+  .btn-submit {
+    background-color: #005b96;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    font-size: 1.1em;
+    cursor: pointer;
+    border-radius: 5px;
+    margin-top: 20px;
+    transition: background-color 0.3s ease;
+  }
+  
+  .btn-submit:hover {
+    background-color: #003b63;
+  }
+  
+  footer {
+    text-align: center;
+    margin-top: 50px;
+    font-size: 0.9em;
+    color: #777;
+  }
+  
+  footer p {
+    margin-top: 10px;
+  }
+  
