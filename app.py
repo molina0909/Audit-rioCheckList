@@ -18,7 +18,7 @@ mail = Mail(app)
 # Lista de e-mails dos destinatários
 emails_destinatarios = [
     'molinakayki@gmail.com',
-    'lucas.almeida@abs-tech.com',
+    '',
     'email3@dominio.com',
 ]
 
